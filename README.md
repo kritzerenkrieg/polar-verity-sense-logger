@@ -8,7 +8,8 @@
 ![This is the graph preview from sample data](https://i.ibb.co.com/0D4Nxfv/Figure-1.png)
 
 ##this is sample of output data of print_hrv.py
-timestamp,heart_rate
-2024-10-23 11:20:40,92
-2024-10-23 11:20:41,93
-2024-10-23 11:20:42,94
+| Timestamp            | Heart Rate |
+|----------------------|------------|
+| 2024-10-23 11:20:40  | 92         |
+| 2024-10-23 11:20:41  | 93         |
+| 2024-10-23 11:20:42  | 94         |
