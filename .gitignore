@@ -1,9 +1,0 @@
-# Ignore everything
-*
-
-# Except these file types
-!*.py
-!*.md
-!.gitignore
-!input_sample.csv
-!*.txt
