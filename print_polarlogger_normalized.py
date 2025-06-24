@@ -67,8 +67,6 @@ low_peaks, _ = find_peaks(-ppg_filtered, distance=min_distance_samples, prominen
 # Plot hasil
 plt.figure(figsize=(14, 6))
 plt.plot(time, ppg_filtered, label='Sinyal PPG Terfilter', color='blue', linewidth=1)
-plt.plot(time[high_peaks], ppg_filtered[high_peaks], 'ro', label='Puncak Tinggi (High Peaks)', markersize=6)
-plt.plot(time[low_peaks], ppg_filtered[low_peaks], 'go', label='Puncak Rendah (Low Peaks)', markersize=6)
 plt.xlabel("Waktu (detik)")
 plt.ylabel("Sinyal PPG (Ternormalisasi dan Terfilter)")
 plt.title("Sinyal PPG dengan Deteksi Puncak Tinggi dan Rendah")
