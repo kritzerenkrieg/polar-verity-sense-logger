@@ -1,0 +1,51 @@
+combination,subject,overall_accuracy,best_kernel,best_params
+combo_1_90pct,bayu,0.6196428571428572,poly,"{'svm__C': 1, 'svm__degree': 3, 'svm__gamma': 'scale'}"
+combo_1_90pct,desta,0.5803571428571429,linear,{'svm__C': 0.1}
+combo_1_90pct,dewi,0.5267857142857143,rbf,"{'svm__C': 10, 'svm__gamma': 0.1}"
+combo_1_90pct,esty,0.6035714285714285,poly,"{'svm__C': 1, 'svm__degree': 2, 'svm__gamma': 'scale'}"
+combo_1_90pct,hilmi,0.48214285714285715,poly,"{'svm__C': 10, 'svm__degree': 2, 'svm__gamma': 'scale'}"
+combo_1_90pct,irsyad,0.6285714285714286,poly,"{'svm__C': 10, 'svm__degree': 3, 'svm__gamma': 'scale'}"
+combo_1_90pct,jovita,0.6592592592592592,rbf,"{'svm__C': 10, 'svm__gamma': 0.1}"
+combo_1_90pct,nathan,0.6464285714285715,linear,{'svm__C': 10}
+combo_1_90pct,prayogi,0.55,linear,{'svm__C': 1}
+combo_1_90pct,rizqi,0.5267857142857143,linear,{'svm__C': 10}
+combo_2_power,bayu,0.6196428571428572,rbf,"{'svm__C': 0.1, 'svm__gamma': 'scale'}"
+combo_2_power,desta,0.49464285714285716,rbf,"{'svm__C': 1, 'svm__gamma': 'scale'}"
+combo_2_power,dewi,0.5607142857142857,linear,{'svm__C': 10}
+combo_2_power,esty,0.5732142857142857,rbf,"{'svm__C': 0.1, 'svm__gamma': 'scale'}"
+combo_2_power,hilmi,0.5,poly,"{'svm__C': 1, 'svm__degree': 2, 'svm__gamma': 'scale'}"
+combo_2_power,irsyad,0.6267857142857143,rbf,"{'svm__C': 0.1, 'svm__gamma': 0.1}"
+combo_2_power,jovita,0.6296296296296297,rbf,"{'svm__C': 10, 'svm__gamma': 0.1}"
+combo_2_power,nathan,0.6732142857142858,rbf,"{'svm__C': 1, 'svm__gamma': 0.1}"
+combo_2_power,prayogi,0.6,rbf,"{'svm__C': 0.1, 'svm__gamma': 'scale'}"
+combo_2_power,rizqi,0.5089285714285714,poly,"{'svm__C': 10, 'svm__degree': 3, 'svm__gamma': 'scale'}"
+combo_3_mixed,bayu,0.6089285714285714,linear,{'svm__C': 0.1}
+combo_3_mixed,desta,0.4392857142857143,poly,"{'svm__C': 0.1, 'svm__degree': 3, 'svm__gamma': 'scale'}"
+combo_3_mixed,dewi,0.6160714285714286,poly,"{'svm__C': 0.1, 'svm__degree': 3, 'svm__gamma': 'scale'}"
+combo_3_mixed,esty,0.5303571428571429,rbf,"{'svm__C': 0.1, 'svm__gamma': 0.1}"
+combo_3_mixed,hilmi,0.475,rbf,"{'svm__C': 0.1, 'svm__gamma': 0.1}"
+combo_3_mixed,irsyad,0.6892857142857143,poly,"{'svm__C': 1, 'svm__degree': 2, 'svm__gamma': 'scale'}"
+combo_3_mixed,jovita,0.5944444444444444,poly,"{'svm__C': 0.1, 'svm__degree': 3, 'svm__gamma': 'scale'}"
+combo_3_mixed,nathan,0.7321428571428571,poly,"{'svm__C': 10, 'svm__degree': 3, 'svm__gamma': 'scale'}"
+combo_3_mixed,prayogi,0.6410714285714286,rbf,"{'svm__C': 10, 'svm__gamma': 'scale'}"
+combo_3_mixed,rizqi,0.46785714285714286,linear,{'svm__C': 1}
+combo_4_top3,bayu,0.6142857142857143,rbf,"{'svm__C': 0.1, 'svm__gamma': 'scale'}"
+combo_4_top3,desta,0.5125,poly,"{'svm__C': 0.1, 'svm__degree': 3, 'svm__gamma': 'scale'}"
+combo_4_top3,dewi,0.5321428571428571,rbf,"{'svm__C': 10, 'svm__gamma': 0.1}"
+combo_4_top3,esty,0.5732142857142857,poly,"{'svm__C': 1, 'svm__degree': 2, 'svm__gamma': 'scale'}"
+combo_4_top3,hilmi,0.41964285714285715,poly,"{'svm__C': 0.1, 'svm__degree': 2, 'svm__gamma': 'scale'}"
+combo_4_top3,irsyad,0.6178571428571429,linear,{'svm__C': 1}
+combo_4_top3,jovita,0.6425925925925926,rbf,"{'svm__C': 0.1, 'svm__gamma': 0.1}"
+combo_4_top3,nathan,0.6678571428571428,linear,{'svm__C': 0.1}
+combo_4_top3,prayogi,0.5642857142857143,rbf,"{'svm__C': 0.1, 'svm__gamma': 0.1}"
+combo_4_top3,rizqi,0.44642857142857145,rbf,"{'svm__C': 0.1, 'svm__gamma': 0.1}"
+combo_5_all,bayu,0.6107142857142858,rbf,"{'svm__C': 0.1, 'svm__gamma': 0.1}"
+combo_5_all,desta,0.5625,rbf,"{'svm__C': 10, 'svm__gamma': 'scale'}"
+combo_5_all,dewi,0.5428571428571428,poly,"{'svm__C': 0.1, 'svm__degree': 3, 'svm__gamma': 'scale'}"
+combo_5_all,esty,0.5607142857142857,poly,"{'svm__C': 0.1, 'svm__degree': 2, 'svm__gamma': 'scale'}"
+combo_5_all,hilmi,0.48392857142857143,rbf,"{'svm__C': 1, 'svm__gamma': 'scale'}"
+combo_5_all,irsyad,0.7017857142857142,rbf,"{'svm__C': 10, 'svm__gamma': 0.1}"
+combo_5_all,jovita,0.6277777777777778,poly,"{'svm__C': 0.1, 'svm__degree': 3, 'svm__gamma': 'scale'}"
+combo_5_all,nathan,0.675,poly,"{'svm__C': 1, 'svm__degree': 3, 'svm__gamma': 'scale'}"
+combo_5_all,prayogi,0.5928571428571429,rbf,"{'svm__C': 10, 'svm__gamma': 0.1}"
+combo_5_all,rizqi,0.36607142857142855,linear,{'svm__C': 10}

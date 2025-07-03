@@ -522,45 +522,32 @@ def main(root_directory=".", save_results=True):
     # Step 4: Save results to files
     if save_results:
         try:
-            import json
             from datetime import datetime
             
             # Create timestamp for unique filename
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             
-            # Save detailed results
-            results_filename = f'hrv_analysis_results_{timestamp}.json'
-            with open(results_filename, 'w') as f:
-                # Convert numpy types to native Python types for JSON serialization
-                def convert_numpy(obj):
-                    if isinstance(obj, np.integer):
-                        return int(obj)
-                    elif isinstance(obj, np.floating):
-                        return float(obj)
-                    elif isinstance(obj, np.ndarray):
-                        return obj.tolist()
-                    return obj
-                
-                def clean_for_json(data):
-                    if isinstance(data, dict):
-                        return {k: clean_for_json(v) for k, v in data.items()}
-                    elif isinstance(data, list):
-                        return [clean_for_json(item) for item in data]
-                    else:
-                        return convert_numpy(data)
-                
-                json.dump(clean_for_json(all_results), f, indent=2)
+            # Save detailed results as CSV instead of JSON
+            detailed_results_filename = f'hrv_detailed_analysis_{timestamp}.csv'
+            create_detailed_results_csv(all_results, detailed_results_filename)
             
             # Create summary CSV for easy viewing
             summary_filename = f'hrv_feature_summary_{timestamp}.csv'
             create_summary_csv(consistency_results, summary_filename)
             
+            # Create recommendations CSV
+            recommendations_filename = f'hrv_recommendations_{timestamp}.csv'
+            create_recommendations_csv(recommendations, recommendations_filename)
+            
             print(f"\n💾 Results saved:")
-            print(f"  📄 Detailed results: {results_filename}")
+            print(f"  📄 Detailed analysis: {detailed_results_filename}")
             print(f"  📊 Feature summary: {summary_filename}")
+            print(f"  🎯 Recommendations: {recommendations_filename}")
             
         except Exception as e:
             print(f"⚠️  Could not save results: {e}")
+            import traceback
+            traceback.print_exc()
     
     print(f"\n🎉 Analysis complete! Found {len(all_results)} subjects with valid data.")
     
@@ -570,26 +557,109 @@ def main(root_directory=".", save_results=True):
         'recommendations': recommendations
     }
 
-def create_summary_csv(consistency_results, filename):
+def create_detailed_results_csv(all_results, filename):
     """
-    Create a CSV summary of feature analysis results
+    Create a detailed CSV with all individual subject results
     """
-    summary_data = []
+    detailed_data = []
     
-    for feature, data in consistency_results.items():
-        summary_data.append({
-            'Feature': feature,
+    for subject, subject_results in all_results.items():
+        # Time domain features
+        for feature, stats in subject_results.get('time_analysis', {}).items():
+            detailed_data.append({
+                'Subject': subject,
+                'Domain': 'Time',
+                'Feature': feature,
+                'Truth_Mean': round(stats['truth_mean'], 4),
+                'Lie_Mean': round(stats['lie_mean'], 4),
+                'Truth_Std': round(stats['truth_std'], 4),
+                'Lie_Std': round(stats['lie_std'], 4),
+                'Difference': round(stats['difference'], 4),
+                'Effect_Size': round(stats['effect_size'], 4),
+                'Percent_Diff': round(stats['percent_diff'], 2),
+                'Direction': stats['direction'],
+                'P_Value': round(stats['p_value'], 6),
+                'Significant': stats['significant'],
+                'Truth_Samples': stats['truth_samples'],
+                'Lie_Samples': stats['lie_samples']
+            })
+        
+        # Frequency domain features
+        for feature, stats in subject_results.get('freq_analysis', {}).items():
+            detailed_data.append({
+                'Subject': subject,
+                'Domain': 'Frequency',
+                'Feature': feature,
+                'Truth_Mean': round(stats['truth_mean'], 4),
+                'Lie_Mean': round(stats['lie_mean'], 4),
+                'Truth_Std': round(stats['truth_std'], 4),
+                'Lie_Std': round(stats['lie_std'], 4),
+                'Difference': round(stats['difference'], 4),
+                'Effect_Size': round(stats['effect_size'], 4),
+                'Percent_Diff': round(stats['percent_diff'], 2),
+                'Direction': stats['direction'],
+                'P_Value': round(stats['p_value'], 6),
+                'Significant': stats['significant'],
+                'Truth_Samples': stats['truth_samples'],
+                'Lie_Samples': stats['lie_samples']
+            })
+    
+    df = pd.DataFrame(detailed_data)
+    df = df.sort_values(['Subject', 'Domain', 'Effect_Size'], ascending=[True, True, False])
+    df.to_csv(filename, index=False)
+
+def create_recommendations_csv(recommendations, filename):
+    """
+    Create a CSV with feature recommendations by tier
+    """
+    recommendation_data = []
+    
+    # Tier 1 features
+    for feature, data in recommendations['tier1']:
+        recommendation_data.append({
+            'Tier': 'TIER 1 - HIGH RELIABILITY',
+            'Feature': feature.upper(),
             'Consistency_Percent': f"{data['consistency_score']*100:.0f}%",
-            'Avg_Effect_Size': f"{data['avg_effect_size']:.3f}",
+            'Avg_Effect_Size': round(data['avg_effect_size'], 3),
             'Dominant_Direction': data['dominant_direction'].replace('_', ' ').title(),
             'Reliability': data['reliability'],
             'Subjects_With_Data': data['total_subjects'],
             'Truth_Higher_Count': data['truth_higher_count'],
-            'Lie_Higher_Count': data['lie_higher_count']
+            'Lie_Higher_Count': data['lie_higher_count'],
+            'Recommendation': 'Use with high confidence'
         })
     
-    df = pd.DataFrame(summary_data)
-    df = df.sort_values(['Consistency_Percent', 'Avg_Effect_Size'], ascending=[False, False])
+    # Tier 2 features
+    for feature, data in recommendations['tier2']:
+        recommendation_data.append({
+            'Tier': 'TIER 2 - MODERATE RELIABILITY',
+            'Feature': feature.upper(),
+            'Consistency_Percent': f"{data['consistency_score']*100:.0f}%",
+            'Avg_Effect_Size': round(data['avg_effect_size'], 3),
+            'Dominant_Direction': data['dominant_direction'].replace('_', ' ').title(),
+            'Reliability': data['reliability'],
+            'Subjects_With_Data': data['total_subjects'],
+            'Truth_Higher_Count': data['truth_higher_count'],
+            'Lie_Higher_Count': data['lie_higher_count'],
+            'Recommendation': 'Use with caution'
+        })
+    
+    # Tier 3 features (top 10 only)
+    for feature, data in recommendations['tier3'][:10]:
+        recommendation_data.append({
+            'Tier': 'TIER 3 - LOW RELIABILITY',
+            'Feature': feature.upper(),
+            'Consistency_Percent': f"{data['consistency_score']*100:.0f}%",
+            'Avg_Effect_Size': round(data['avg_effect_size'], 3),
+            'Dominant_Direction': data['dominant_direction'].replace('_', ' ').title(),
+            'Reliability': data['reliability'],
+            'Subjects_With_Data': data['total_subjects'],
+            'Truth_Higher_Count': data['truth_higher_count'],
+            'Lie_Higher_Count': data['lie_higher_count'],
+            'Recommendation': 'Avoid for general model'
+        })
+    
+    df = pd.DataFrame(recommendation_data)
     df.to_csv(filename, index=False)
 
 # Example usage and convenience functions

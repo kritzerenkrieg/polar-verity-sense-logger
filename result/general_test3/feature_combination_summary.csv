@@ -1,0 +1,5 @@
+combination,features,n_features,overall_accuracy,kernels_used,n_estimators
+combo_4_top3,"lf_power, lf_norm, ln_hf",3,0.5568100358422939,"rbf, poly, linear",3
+combo_2_power,"lf_power, lf_hf_ratio",2,0.5442652329749104,"rbf, poly, linear",3
+combo_1_90pct,"lf_power, ln_hf",2,0.5399641577060932,"rbf, poly, linear",3
+combo_3_mixed,"nn_mean, lf_norm",2,0.5130824372759857,"linear, rbf, poly",3

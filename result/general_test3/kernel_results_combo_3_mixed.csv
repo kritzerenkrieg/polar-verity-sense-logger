@@ -1,0 +1,4 @@
+kernel,best_score,best_params
+linear,0.5293584656084656,{'svm__C': 1}
+rbf,0.5265542328042329,"{'svm__C': 10, 'svm__gamma': 0.01}"
+poly,0.5119047619047619,"{'svm__C': 10, 'svm__degree': 2, 'svm__gamma': 'scale'}"

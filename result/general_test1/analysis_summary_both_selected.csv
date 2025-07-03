@@ -1,0 +1,2 @@
+analysis_type,best_kernel,best_params,overall_accuracy,n_features,n_subjects,features_used
+both_selected,rbf,"{'C': 1, 'gamma': 0.1}",0.5437275985663083,6,10,"nn_mean, lf_power, ln_hf, hf_norm, lf_norm, lf_hf_ratio"
