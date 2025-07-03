@@ -1,0 +1,5 @@
+combination_name,baseline_accuracy,optimized_accuracy,improvement_percent,best_method,n_features,features,kernel,kernel_params
+best_8feat,0.6864,0.7204545454545455,3.405454545454545,feature_selection,5,"lf_power, pnn20, nn_min, sdsd, rmssd",rbf,"{'svm__C': 0.5, 'svm__gamma': 0.5}"
+best_4feat,0.6818,0.7125,3.070000000000006,feature_selection,3,"lf_power, pnn20, nn_min",rbf,"{'svm__C': 2, 'svm__gamma': 0.5}"
+best_12feat,0.6875,0.7045454545454546,1.7045454545454586,feature_selection,8,"lf_power, pnn20, nn_min, sdsd, nn_count, sdnn, hf_power, lf_norm",rbf,"{'svm__C': 2, 'svm__gamma': 0.1}"
+best_5feat,0.6795,0.694318181818182,1.4818181818181952,correlation_cleaned,5,"nn_count, sdnn, pnn20, lf_power, lf_norm",rbf,"{'svm__C': 1, 'svm__gamma': 0.5}"

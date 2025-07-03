@@ -1,0 +1,2 @@
+method,n_subjects,best_subject,best_balanced_score,best_accuracy,best_f1,use_regularization,timestamp
+balanced_per_subject_boundary_training,10,bayu,0.6048718178237171,0.6186868686868686,0.5841492415289901,True,2025-07-04T05:57:23.082155

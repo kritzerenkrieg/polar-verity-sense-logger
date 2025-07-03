@@ -1,0 +1,11 @@
+subject_id,features,n_features,kernel,config_params,cv_score,cv_std,n_samples,class_distribution
+bayu,"nn_mean, sdnn",2,rbf,"{'C': 10.0, 'gamma': 'scale'}",1.0,0.0,88,44/44
+desta,"rmssd, pnn50, nn_mean, lf_hf_ratio, sdnn",5,rbf,"{'C': 10.0, 'gamma': 'scale'}",0.9979338842975207,0.002066115702479332,968,484/484
+dewi,"sdnn, lf_hf_ratio, rmssd",3,rbf,"{'C': 10.0, 'gamma': 'scale'}",0.9783057851239669,0.005165289256198358,968,484/484
+esty,"pnn50, hf_power, rmssd, triangular_index",4,rbf,"{'C': 10.0, 'gamma': 'scale'}",1.0,0.0,968,484/484
+hilmi,"rmssd, pnn50, lf_power",3,rbf,"{'C': 10.0, 'gamma': 'scale'}",1.0,0.0,968,484/484
+irsyad,"lf_hf_ratio, lf_power, nn_mean",3,rbf,"{'C': 10.0, 'gamma': 'scale'}",1.0,0.0,968,484/484
+jovita,"nn_mean, sdnn, pnn50, lf_hf_ratio",4,rbf,"{'C': 10.0, 'gamma': 'scale'}",1.0,0.0,968,484/484
+nathan,"pnn50, nn_mean, rmssd, hf_power",4,rbf,"{'C': 10.0, 'gamma': 'scale'}",1.0,0.0,968,484/484
+prayogi,"rmssd, nn_mean",2,rbf,"{'C': 10.0, 'gamma': 'scale'}",1.0,0.0,88,44/44
+rizqi,"sdnn, nn_mean",2,rbf,"{'C': 10.0, 'gamma': 'scale'}",1.0,0.0,88,44/44

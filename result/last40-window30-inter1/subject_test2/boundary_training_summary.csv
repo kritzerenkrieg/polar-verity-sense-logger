@@ -1,0 +1,2 @@
+method,n_subjects,best_subject,best_cross_accuracy,best_cross_std,timestamp
+per_subject_boundary_training,10,irsyad,0.5803489439853077,0.09040260048912957,2025-07-04T05:46:16.261156

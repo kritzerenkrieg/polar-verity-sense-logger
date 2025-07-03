@@ -1,0 +1,6 @@
+combination_name,overall_accuracy,n_features,kernel,features,n_subjects
+combo_12feat_001,0.6875,12,rbf,"nn_count, nn_mean, nn_min, sdnn, sdsd, pnn20, lf_power, hf_power, lf_hf_ratio, lf_norm, hf_norm, lf_peak",10
+combo_8feat_020,0.6863636363636364,8,rbf,"nn_count, nn_mean, nn_min, sdsd, rmssd, pnn20, lf_power, hf_peak",10
+combo_16feat_021,0.6852272727272727,16,rbf,"nn_count, nn_mean, nn_max, sdnn, sdsd, rmssd, pnn20, triangular_index, lf_power, hf_power, lf_hf_ratio, lf_norm, hf_norm, ln_hf, lf_peak, hf_peak",10
+combo_4feat_058,0.6818181818181818,4,rbf,"nn_min, pnn20, lf_power, hf_norm",10
+combo_5feat_031,0.6795454545454546,5,rbf,"nn_count, sdnn, pnn20, lf_power, lf_norm",10

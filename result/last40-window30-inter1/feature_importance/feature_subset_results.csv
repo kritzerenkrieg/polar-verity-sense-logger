@@ -1,0 +1,11 @@
+n_features,accuracy,std,features
+2,0.6272727272727273,0.08915929657242287,"pnn20, hf_power"
+3,0.5977272727272728,0.10267597270978654,"pnn20, hf_power, nn_min"
+4,0.5897727272727272,0.1367843887593334,"pnn20, hf_power, nn_min, nn_count"
+5,0.6522727272727272,0.11602044561909292,"pnn20, hf_power, nn_min, nn_count, hf_norm"
+6,0.6420454545454546,0.1195344360632478,"pnn20, hf_power, nn_min, nn_count, hf_norm, nn_max"
+8,0.6443181818181818,0.11951282824744158,"pnn20, hf_power, nn_min, nn_count, hf_norm, nn_max, rmssd, lf_norm"
+10,0.6659090909090909,0.0922066489777309,"pnn20, hf_power, nn_min, nn_count, hf_norm, nn_max, rmssd, lf_norm, pnn50, lf_power"
+12,0.6670454545454545,0.10189957177178287,"pnn20, hf_power, nn_min, nn_count, hf_norm, nn_max, rmssd, lf_norm, pnn50, lf_power, sdsd, sdnn"
+15,0.6227272727272727,0.10909090909090909,"pnn20, hf_power, nn_min, nn_count, hf_norm, nn_max, rmssd, lf_norm, pnn50, lf_power, sdsd, sdnn, nn_mean, hf_peak, lf_hf_ratio"
+18,0.6136363636363635,0.08743356391668793,"pnn20, hf_power, nn_min, nn_count, hf_norm, nn_max, rmssd, lf_norm, pnn50, lf_power, sdsd, sdnn, nn_mean, hf_peak, lf_hf_ratio, triangular_index, ln_hf, lf_peak"

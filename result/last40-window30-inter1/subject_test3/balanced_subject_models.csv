@@ -1,0 +1,11 @@
+subject_id,features,n_features,kernel,config_params,cv_score,cv_std,n_samples,class_distribution,n_cv_folds
+bayu,"nn_mean, lf_power, rmssd, hf_power",4,rbf,"{'C': 2.0, 'gamma': 'scale'}",0.9431418255937973,0.03412620353469692,88,44/44,2
+desta,"hf_power, lf_norm, nn_mean",3,rbf,"{'C': 0.5, 'gamma': 'scale'}",0.9431794691097016,0.03408856001879257,88,44/44,2
+dewi,"sdnn, rmssd, lf_norm, lf_power",4,rbf,"{'C': 1.0, 'gamma': 'scale'}",0.8974363117422277,0.03425449356040944,88,44/44,2
+esty,"hf_power, pnn50, triangular_index, sdnn",4,rbf,"{'C': 2.0, 'gamma': 'scale'}",0.9316908053026371,0.0,88,44/44,2
+hilmi,"sdnn, lf_power, nn_min",3,rbf,"{'C': 1.0, 'gamma': 'scale'}",0.8856558193903732,0.06885199163917699,88,44/44,2
+irsyad,"lf_norm, hf_norm, lf_power",3,linear,{'C': 1.0},0.9431747709654686,0.01137068357998594,88,44/44,2
+jovita,"nn_mean, hf_power, nn_min, sdnn",4,rbf,"{'C': 2.0, 'gamma': 'scale'}",0.9430993081660937,0.011408502863456516,88,44/44,2
+nathan,"nn_min, pnn50",2,rbf,"{'C': 1.0, 'gamma': 'scale'}",0.9430993081660937,0.011408502863456516,88,44/44,2
+prayogi,"sdnn, triangular_index",2,rbf,"{'C': 1.0, 'gamma': 'scale'}",0.9431559492075164,0.011351861822033738,88,44/44,2
+rizqi,"sdnn, rmssd, triangular_index, nn_mean",4,rbf,"{'C': 2.0, 'gamma': 'scale'}",0.9430993081660937,0.011408502863456516,88,44/44,2

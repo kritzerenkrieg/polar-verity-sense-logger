@@ -1,0 +1,2 @@
+analysis_type,best_kernel,best_params,overall_accuracy,n_features,n_subjects,features_used
+both_all,rbf,"{'C': 100, 'gamma': 0.01}",0.6659090909090909,18,10,"nn_count, nn_mean, nn_min, nn_max, sdnn, sdsd, rmssd, pnn20, pnn50, triangular_index, lf_power, hf_power, lf_hf_ratio, lf_norm, hf_norm, ln_hf, lf_peak, hf_peak"

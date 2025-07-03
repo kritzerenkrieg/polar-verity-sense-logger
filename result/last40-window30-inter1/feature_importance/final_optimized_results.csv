@@ -1,0 +1,2 @@
+accuracy,n_features,features,kernel,params
+0.6693181818181818,12,"pnn20, hf_power, nn_min, nn_count, hf_norm, nn_max, rmssd, lf_norm, pnn50, lf_power, sdsd, sdnn",rbf,"{'svm__C': 1, 'svm__gamma': 0.1}"
