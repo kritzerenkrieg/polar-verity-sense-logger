@@ -1,0 +1,11 @@
+subject_id,n_successful_combinations,best_balanced_score,best_accuracy,best_f1,best_features,best_config,avg_balanced_score,std_balanced_score,success_rate
+rizqi,4,0.9886340145642472,0.9886363636363636,0.9886304909560724,"hf_norm, lf_hf_ratio, lf_norm, lf_power, rmssd, sdnn",rbf_C10.0_gammascale,0.985792518205309,0.004921616063203002,1.0
+irsyad,4,0.9772539055147751,0.9772727272727273,0.9772256728778468,"hf_norm, lf_hf_ratio, lf_norm, lf_power, rmssd, sdnn",rbf_C10.0_gammascale,0.9772539055147751,0.0,1.0
+prayogi,4,0.9431559492075164,0.9431818181818181,0.9431171457460639,"hf_norm, lf_hf_ratio, lf_norm, lf_power, rmssd, sdnn",rbf_C2.0_gammascale,0.9289331253211563,0.01240179145004058,1.0
+desta,4,0.9087865401486663,0.9090909090909091,0.9083299867353023,"hf_norm, lf_hf_ratio, lf_norm, lf_power, rmssd, sdnn",rbf_C2.0_gammascale,0.8772692391751272,0.02479581885896464,1.0
+bayu,4,0.8862695275738754,0.8863636363636364,0.8861283643892339,"hf_norm, lf_hf_ratio, lf_norm, lf_power, rmssd, sdnn",rbf_C10.0_gammascale,0.7939917765614974,0.054776430195685046,1.0
+hilmi,4,0.8855303618504713,0.8863636363636364,0.8842804500807238,"hf_norm, lf_hf_ratio, lf_norm, lf_power, rmssd, sdnn",rbf_C10.0_gammascale,0.8397015196008095,0.033455927568771075,1.0
+dewi,4,0.8854737208090485,0.8863636363636364,0.8841388474771668,"hf_norm, lf_hf_ratio, lf_norm, lf_power, rmssd, sdnn",rbf_C10.0_gammascale,0.8679976066078704,0.030269517715316434,1.0
+esty,4,0.7943841872413301,0.7954545454545454,0.792778649921507,"hf_norm, lf_hf_ratio, lf_norm, lf_power, rmssd, sdnn",rbf_C10.0_gammascale,0.7536880302174815,0.04918086045329658,1.0
+nathan,4,0.7573489553924337,0.7613636363636365,0.7513269339356297,"hf_norm, lf_hf_ratio, lf_norm, lf_power, rmssd, sdnn",rbf_C10.0_gammascale,0.7445971769950436,0.008378875021709909,1.0
+jovita,4,0.7436431623931624,0.75,0.734107905982906,"hf_norm, lf_hf_ratio, lf_norm, lf_power, rmssd, sdnn",rbf_C10.0_gammascale,0.7095775600017176,0.029184663344116013,1.0

@@ -1,0 +1,2 @@
+method,total_experiments,total_possible_experiments,success_rate,n_subjects,n_feature_combinations,n_configs,best_overall_score,best_overall_subject,best_overall_features,best_overall_config,avg_performance,std_performance,timestamp
+focused_combination_training,40,40,1.0,10,1,4,0.9886340145642472,rizqi,"hf_norm, lf_hf_ratio, lf_norm, lf_power, rmssd, sdnn",rbf_C10.0_gammascale,0.8478802458200787,0.09716118211629794,2025-07-13T11:09:13.755957

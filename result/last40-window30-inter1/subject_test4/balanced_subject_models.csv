@@ -1,0 +1,11 @@
+subject_id,features,n_features,kernel,config_params,cv_score,cv_std,n_samples,class_distribution,n_cv_folds
+bayu,"nn_mean, lf_power, rmssd, sdnn, hf_power",5,rbf,"{'C': 2.0, 'gamma': 'scale'}",0.9431559492075164,0.011351861822033738,88,44/44,2
+desta,"hf_power, lf_norm, nn_mean",3,rbf,"{'C': 0.5, 'gamma': 'scale'}",0.9431794691097016,0.03408856001879257,88,44/44,2
+dewi,"sdnn, rmssd, lf_hf_ratio, lf_norm, nn_min, lf_power",6,rbf,"{'C': 2.0, 'gamma': 'scale'}",0.9088636363636364,0.04568181818181816,88,44/44,2
+esty,"hf_power, pnn50, triangular_index, sdnn",4,rbf,"{'C': 2.0, 'gamma': 'scale'}",0.9316908053026371,0.0,88,44/44,2
+hilmi,"rmssd, pnn50",2,rbf,"{'C': 2.0, 'gamma': 'scale'}",0.8975786667924707,0.056966787752983916,88,44/44,2
+irsyad,"lf_norm, hf_norm, lf_power",3,linear,{'C': 1.0},0.9431747709654686,0.01137068357998594,88,44/44,2
+jovita,"nn_mean, hf_power, nn_min, sdnn",4,rbf,"{'C': 2.0, 'gamma': 'scale'}",0.9430993081660937,0.011408502863456516,88,44/44,2
+nathan,"nn_min, pnn50",2,rbf,"{'C': 1.0, 'gamma': 'scale'}",0.9430993081660937,0.011408502863456516,88,44/44,2
+prayogi,"sdnn, triangular_index",2,rbf,"{'C': 1.0, 'gamma': 'scale'}",0.9431559492075164,0.011351861822033738,88,44/44,2
+rizqi,"sdnn, rmssd, triangular_index, nn_mean",4,rbf,"{'C': 2.0, 'gamma': 'scale'}",0.9430993081660937,0.011408502863456516,88,44/44,2
