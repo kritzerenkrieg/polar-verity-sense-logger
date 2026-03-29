@@ -1,0 +1,21 @@
+subject,n_sessions,n_samples,stage_size,candidate_rank,n_features,features,quick_accuracy,quick_std,best_cv_score,overall_accuracy,auc,f1_score,session_std,best_params,confusion_matrix,model_path
+irsyad,4,88,4,1,4,"nn_count, lf_norm, sd1_sd2_ratio, dfa",0.9886363636363636,0.022727272727272707,1.0,1.0,1.0,1.0,0.0,"{'C': 0.1, 'coef0': 1.0, 'degree': 2, 'gamma': 'scale', 'kernel': 'poly'}","[[44  0]
+ [ 0 44]]",d:\Programming\myScripts\polar-verity-sense-logger\implementation\v2_svm\individual\irsyad_model.joblib
+nathan,4,88,4,3,4,"nn_count, sdsd, lf_power, sd1",0.75,0.28867513459481287,0.9886363636363636,0.9886363636363636,0.9979338842975206,0.9885057471264368,0.022727272727272707,"{'C': 10, 'coef0': 1.0, 'gamma': 0.1, 'kernel': 'sigmoid'}","[[44  0]
+ [ 1 43]]",d:\Programming\myScripts\polar-verity-sense-logger\implementation\v2_svm\individual\nathan_model.joblib
+rizqi,4,88,4,1,4,"sdsd, pnn20, lf_power, sd2",0.9318181818181818,0.10820346103852804,0.9545454545454546,0.9545454545454546,0.984504132231405,0.9523809523809523,0.09090909090909088,"{'C': 10, 'coef0': 1.0, 'degree': 3, 'gamma': 0.01, 'kernel': 'poly'}","[[44  0]
+ [ 4 40]]",d:\Programming\myScripts\polar-verity-sense-logger\implementation\v2_svm\individual\rizqi_model.joblib
+esty,4,88,4,3,4,"pnn20, lf_power, lf_hf_ratio, sd2",0.8295454545454546,0.1715871462561534,0.9545454545454546,0.9545454545454546,0.9684917355371901,0.9545454545454546,0.05248638810814781,"{'C': 10, 'kernel': 'linear'}","[[42  2]
+ [ 2 42]]",d:\Programming\myScripts\polar-verity-sense-logger\implementation\v2_svm\individual\esty_model.joblib
+bayu,4,88,12,3,12,"nn_count, nn_mean, nn_min, pnn20, lf_power, lf_hf_ratio, lf_norm, hf_norm, lf_peak, sd2, sd1_sd2_ratio, dfa",0.7272727272727273,0.21320071635561041,0.9204545454545455,0.9204545454545454,0.9545454545454546,0.9176470588235294,0.07762841489363331,"{'C': 1, 'coef0': 1.0, 'degree': 2, 'gamma': 0.1, 'kernel': 'poly'}","[[42  2]
+ [ 5 39]]",d:\Programming\myScripts\polar-verity-sense-logger\implementation\v2_svm\individual\bayu_model.joblib
+desta,4,88,12,1,12,"nn_mean, nn_min, sdnn, sdsd, hf_power, lf_hf_ratio, lf_norm, hf_norm, sd1, sd2, sd1_sd2_ratio, dfa",0.6477272727272727,0.3681069882804952,0.8863636363636364,0.8863636363636364,0.8853305785123967,0.8717948717948718,0.17208813169091738,"{'C': 1, 'coef0': 0.0, 'degree': 2, 'gamma': 0.1, 'kernel': 'poly'}","[[44  0]
+ [10 34]]",d:\Programming\myScripts\polar-verity-sense-logger\implementation\v2_svm\individual\desta_model.joblib
+prayogi,4,88,4,1,4,"sdsd, lf_hf_ratio, sd1, sd2",0.7727272727272727,0.26504326794751365,0.8409090909090909,0.8409090909090909,0.8925619834710744,0.86,0.2361887464866651,"{'C': 1, 'gamma': 1, 'kernel': 'rbf'}","[[31 13]
+ [ 1 43]]",d:\Programming\myScripts\polar-verity-sense-logger\implementation\v2_svm\individual\prayogi_model.joblib
+jovita,4,88,4,1,4,"nn_mean, sdsd, hf_power, lf_norm",0.75,0.23028309323591917,0.8181818181818182,0.8181818181818182,0.8471074380165289,0.7837837837837838,0.25712973861329,"{'C': 1, 'coef0': 1.0, 'gamma': 'scale', 'kernel': 'sigmoid'}","[[43  1]
+ [15 29]]",d:\Programming\myScripts\polar-verity-sense-logger\implementation\v2_svm\individual\jovita_model.joblib
+dewi,4,88,4,1,4,"nn_min, sdnn, sd1_sd2_ratio, dfa",0.7954545454545454,0.08703882797784894,0.7954545454545454,0.7954545454545454,0.868801652892562,0.8,0.08703882797784894,"{'C': 1, 'kernel': 'linear'}","[[34 10]
+ [ 8 36]]",d:\Programming\myScripts\polar-verity-sense-logger\implementation\v2_svm\individual\dewi_model.joblib
+hilmi,4,88,4,1,4,"sdnn, sdsd, sd1, sd1_sd2_ratio",0.7272727272727273,0.18924236358783028,0.7954545454545454,0.7954545454545454,0.8347107438016529,0.7906976744186046,0.17604469755488256,"{'C': 10, 'coef0': 0.0, 'degree': 3, 'gamma': 'scale', 'kernel': 'poly'}","[[36  8]
+ [10 34]]",d:\Programming\myScripts\polar-verity-sense-logger\implementation\v2_svm\individual\hilmi_model.joblib
