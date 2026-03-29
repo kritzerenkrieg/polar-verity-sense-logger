@@ -1,0 +1,23 @@
+feature_count,mean_test_score,std_test_score,overall_accuracy,selected_features,kernel,C,gamma
+13,0.5598214285714286,0.0645147210696433,0.5598214285714286,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean, triangular_index, lf_power, lf_norm, sdnn",rbf,1000,0.1
+12,0.5571428571428572,0.06453325356997375,0.5571428571428572,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean, triangular_index, lf_power, lf_norm",rbf,1000,0.1
+8,0.5544642857142857,0.06468748459528556,0.5544642857142857,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm",rbf,1000,0.1
+14,0.5535714285714286,0.08085165301908408,0.5535714285714286,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean, triangular_index, lf_power, lf_norm, sdnn, lf_peak",rbf,1000,0.1
+11,0.5517857142857142,0.06398740309703184,0.5517857142857143,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean, triangular_index, lf_power",rbf,1000,0.1
+10,0.5482142857142857,0.07145088937050913,0.5482142857142858,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean, triangular_index",rbf,1000,0.1
+7,0.5428571428571429,0.06411186811077231,0.5428571428571428,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd",rbf,1000,0.1
+15,0.5410714285714286,0.06018678409411685,0.5410714285714285,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean, triangular_index, lf_power, lf_norm, sdnn, lf_peak, dfa",rbf,1000,0.1
+16,0.5410714285714285,0.06539226222714485,0.5410714285714285,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean, triangular_index, lf_power, lf_norm, sdnn, lf_peak, dfa, nn_count",rbf,1000,0.1
+20,0.5375,0.06448382173309924,0.5375,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean, triangular_index, lf_power, lf_norm, sdnn, lf_peak, dfa, nn_count, pnn20, hf_power, lf_hf_ratio, ln_hf",rbf,1000,0.1
+18,0.5366071428571428,0.05167012962939387,0.5366071428571428,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean, triangular_index, lf_power, lf_norm, sdnn, lf_peak, dfa, nn_count, pnn20, hf_power",rbf,1000,0.1
+19,0.5357142857142857,0.05175491695067656,0.5357142857142857,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean, triangular_index, lf_power, lf_norm, sdnn, lf_peak, dfa, nn_count, pnn20, hf_power, lf_hf_ratio",rbf,1000,0.1
+5,0.5339285714285715,0.06643241156335099,0.5339285714285714,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1",rbf,1000,0.1
+6,0.5303571428571429,0.07200658983448555,0.5303571428571429,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd",rbf,1000,0.1
+17,0.5303571428571427,0.058302956133266096,0.5303571428571429,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean, triangular_index, lf_power, lf_norm, sdnn, lf_peak, dfa, nn_count, pnn20",rbf,1000,0.1
+21,0.5276785714285714,0.06614980872139807,0.5276785714285714,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean, triangular_index, lf_power, lf_norm, sdnn, lf_peak, dfa, nn_count, pnn20, hf_power, lf_hf_ratio, ln_hf, pnn50",rbf,1000,0.1
+9,0.5258928571428572,0.09486580882316595,0.5258928571428572,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean",rbf,1000,0.1
+22,0.5258928571428572,0.04158261079355362,0.5258928571428572,"nn_min, nn_max, sd1_sd2_ratio, sd2, sd1, rmssd, sdsd, hf_norm, nn_mean, triangular_index, lf_power, lf_norm, sdnn, lf_peak, dfa, nn_count, pnn20, hf_power, lf_hf_ratio, ln_hf, pnn50, hf_peak",rbf,1000,0.1
+4,0.5169642857142858,0.055249030372874944,0.5169642857142858,"nn_min, nn_max, sd1_sd2_ratio, sd2",rbf,1000,0.1
+1,0.5035714285714284,0.06031909197876621,0.5035714285714286,nn_min,rbf,1000,0.1
+2,0.47767857142857134,0.0559373396702753,0.47767857142857145,"nn_min, nn_max",rbf,1000,0.1
+3,0.4616071428571429,0.04169748010298434,0.4616071428571429,"nn_min, nn_max, sd1_sd2_ratio",rbf,1000,0.1

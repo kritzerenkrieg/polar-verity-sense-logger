@@ -1,0 +1,3 @@
+loso_accuracy,best_cv_score,best_feature_count,losocv_standard_deviation,auc,f1_score,selected_features,best_params,confusion_matrix
+0.6897727272727273,0.6897727272727272,6,0.12014802815070756,0.6760175619834711,0.7159209157127991,"sd1_sd2_ratio, nn_max, nn_min, pnn20, sdnn, lf_power","{'C': 1, 'gamma': 1, 'kernel': 'rbf'}","[[263 177]
+ [ 96 344]]"

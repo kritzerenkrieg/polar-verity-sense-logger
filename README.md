@@ -1,5 +1,19 @@
 ﻿#PPG Lie Detection Project, by Kentaro Mas'ud Mizoguchi
 
+>datasets
+    >raw        - data yang belum sesuai waktu eksperimen
+    >trimmed    - data yang sudah dipotong sesuai waktu eksperimen
+    >segmented  - data yang sudah dipisah dengan label
+        >40s    - time window 40 detik akhir
+        >100s   - time window 100 detik akhir
+            >windowed (time domain)
+            >frequency_windowed (frequency domain)
+>deprecated     - berisi file lama yang tidak terpakai
+>documentation  - kumpulan foto-foto dan grafik hasil proses data
+>implementation - berisi pipeline proses data dan model yang sudah siap digunakan
+>result         - kumpulan berbagai training dan model SVM
+>test           - tempat temporary untuk menjalani berbagai kode skrip
+
 ## Data Timeline
 00:00 - Research Title  
 00:05 - Question Brief  

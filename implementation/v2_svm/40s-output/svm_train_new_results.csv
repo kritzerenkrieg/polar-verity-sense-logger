@@ -1,0 +1,13 @@
+combination_name,n_features,features,best_cv_score,overall_accuracy,auc,f1_score,losocv_std,best_params,confusion_matrix
+legacy_12feat,12,"nn_count, nn_mean, nn_min, sdnn, sdsd, pnn20, lf_power, hf_power, lf_hf_ratio, lf_norm, hf_norm, lf_peak",0.7045454545454546,0.7045454545454546,0.7411983471074379,0.7251585623678647,0.1218025393243449,"{'C': 1, 'coef0': 1.0, 'degree': 3, 'gamma': 0.1, 'kernel': 'poly'}","[[277 163]
+ [ 97 343]]"
+legacy_12feat_plus_sd1,13,"nn_count, nn_mean, nn_min, sdnn, sdsd, pnn20, lf_power, hf_power, lf_hf_ratio, lf_norm, hf_norm, lf_peak, sd1",0.7034090909090909,0.7034090909090909,0.739323347107438,0.7232237539766702,0.12961521247826244,"{'C': 1, 'coef0': 1.0, 'degree': 3, 'gamma': 'scale', 'kernel': 'poly'}","[[278 162]
+ [ 99 341]]"
+legacy_12feat_plus_dfa,13,"nn_count, nn_mean, nn_min, sdnn, sdsd, pnn20, lf_power, hf_power, lf_hf_ratio, lf_norm, hf_norm, lf_peak, dfa",0.7011363636363637,0.7011363636363637,0.739065082644628,0.720510095642933,0.11057103015214814,"{'C': 1, 'coef0': 1.0, 'degree': 3, 'gamma': 0.1, 'kernel': 'poly'}","[[278 162]
+ [101 339]]"
+legacy_12feat_plus_sd2,13,"nn_count, nn_mean, nn_min, sdnn, sdsd, pnn20, lf_power, hf_power, lf_hf_ratio, lf_norm, hf_norm, lf_peak, sd2",0.6920454545454545,0.6920454545454545,0.7317303719008263,0.7063921993499458,0.12522362916109514,"{'C': 1, 'coef0': 1.0, 'degree': 3, 'gamma': 'scale', 'kernel': 'poly'}","[[283 157]
+ [114 326]]"
+legacy_12feat_plus_all_nonlinear,16,"nn_count, nn_mean, nn_min, sdnn, sdsd, pnn20, lf_power, hf_power, lf_hf_ratio, lf_norm, hf_norm, lf_peak, sd1, sd2, sd1_sd2_ratio, dfa",0.6806818181818182,0.6806818181818182,0.7161931818181818,0.7051416579223505,0.11911659257325416,"{'C': 1, 'coef0': 1.0, 'degree': 3, 'gamma': 0.1, 'kernel': 'poly'}","[[263 177]
+ [104 336]]"
+legacy_12feat_plus_sd1_sd2_ratio,13,"nn_count, nn_mean, nn_min, sdnn, sdsd, pnn20, lf_power, hf_power, lf_hf_ratio, lf_norm, hf_norm, lf_peak, sd1_sd2_ratio",0.6795454545454547,0.6795454545454546,0.7266528925619835,0.7044025157232704,0.11733867850334317,"{'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}","[[262 178]
+ [104 336]]"

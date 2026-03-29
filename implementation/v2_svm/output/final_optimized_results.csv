@@ -1,0 +1,2 @@
+loso_accuracy,best_cv_score,n_selected_features,selected_features,best_params
+0.5410714285714285,0.5410714285714285,22,"nn_count, nn_mean, nn_min, nn_max, sdnn, sdsd, rmssd, pnn20, pnn50, triangular_index, lf_power, hf_power, lf_hf_ratio, lf_norm, hf_norm, ln_hf, lf_peak, hf_peak, sd1, sd2, sd1_sd2_ratio, dfa","{'selector__k': 22, 'svm__C': 10, 'svm__gamma': 0.1, 'svm__kernel': 'rbf'}"

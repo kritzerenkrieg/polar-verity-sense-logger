@@ -1,0 +1,2 @@
+loso_accuracy,best_cv_score,selected_features,best_params
+0.5678571428571428,0.5678571428571428,"sd1_sd2_ratio, lf_power, nn_min, dfa, sd2","{'C': 1000, 'gamma': 0.1, 'kernel': 'rbf'}"

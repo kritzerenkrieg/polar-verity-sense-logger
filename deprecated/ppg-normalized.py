@@ -173,8 +173,8 @@ def main():
         plt.plot(time, ppg_filtered, label='Normalized PPG Signal')
 
         # Add vertical lines every 10 seconds
-        for t in range(0, int(np.max(time)), 10):
-            plt.axvline(x=t, color='r', linestyle='--', alpha=0.5)
+        #for t in range(0, int(np.max(time)), 10):
+        #    plt.axvline(x=t, color='r', linestyle='--', alpha=0.5)
         
         plt.xlabel('Time (seconds)')
         plt.ylabel('Normalized PPG Amplitude')
